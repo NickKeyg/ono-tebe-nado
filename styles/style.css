@@ -1,19 +1,19 @@
 .header {
   display: grid;
   align-items: center;
-  justify-items: end;
-  grid-template-columns: 440px 185px 390px;
+  grid-template-columns: 1fr min-content 1fr;
   font-size: 18px;
   margin-top: 92px;
 }
 
-.header__link-main {
+.header__link_active {
   text-decoration: none;
 }
 
 .header__links-list {
   list-style: circle;
   display: flex;
+  margin-left: 50px;
   gap: 34px;
 }
 
@@ -21,18 +21,20 @@
   list-style-type: none;
 }
 
-.header__link_active {
+.header__link {
   text-decoration: underline;
 }
 
 .header__logo-image {
   width: 148px;
   height: 105px;
+  justify-content: end;
 }
 
 .address {
   font-style: normal;
   line-height: 24px;
+  margin-left: 185px;
 }
 
 .cover {
@@ -47,7 +49,7 @@
 }
 
 .overlay {
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0, 0.6);
 }
 
 .cover__title {
@@ -55,26 +57,27 @@
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 165px 20px 130px 50px;
-  letter-spacing: 30px;
+
+  margin: 165px 50px 140px 50px;
 }
 
 .aligned-text {
   align-self: flex-start;
-  margin-bottom: 10px;
+  letter-spacing: 30px;
 }
 
 .aligned-text_center {
-  margin-right: 30px;
+  letter-spacing: 30px;
+  text-align: center;
 }
 
 .aligned-text_right {
   align-self: flex-end;
+  letter-spacing: 20px;
 }
 
 .no-letter-spacing {
-  padding: 30px;
+  letter-spacing: 60px;
 }
 
 .cover__description {
@@ -117,7 +120,9 @@
   display: flex;
   margin-left: 25px;
 }
-
+.lol {
+  display: flex;
+}
 .card {
   padding: 51px 40px 48px 40px;
 }
@@ -211,10 +216,7 @@
   width: 693px;
   margin-left: 385px;
   font-size: 20px;
-}
-
-.about_text-one {
-  margin-bottom: 30px;
+  gap: 20px;
 }
 
 .footer {
@@ -223,7 +225,11 @@
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  margin-left: 50px;
+}
+
+.address-footer {
+  font-style: normal;
+  line-height: 24px;
 }
 
 .footer__menu-list {
@@ -231,6 +237,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 100px;
 }
 
 .footer__menu-link_active {

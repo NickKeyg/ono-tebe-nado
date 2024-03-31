@@ -14,13 +14,13 @@
       <nav>
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
-            <a href="#0" class="header__link-main">главная</a>
+            <a href="#0" class="header__link_active">главная</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#0" class="header__link_active">посмотреть лоты</a>
+            <a href="#0" class="header__link">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#0" class="header__link_active">об аукционе</a>
+            <a href="#0" class="header__link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -40,32 +40,33 @@
     </header>
     <main>
       <section class="cover">
-        <div class="overlay">
-          <h1 class="cover__title">
-            <span class="aligned-text"
-              >он<span class="no-letter-spacing">о</span></span
-            >
-            <span class="aligned-text_center"
-              >теб<span class="no-letter-spacing">е</span></span
-            >
-            <span class="aligned-text_right"
-              ><span class="no-letter-spacing">н</span>адо</span
-            >
-          </h1>
-          <div class="cover__description">
-            <h2 class="cover__description-text">
-              Аукцион вещей, в которые никто не верил
-            </h2>
-            <button class="bet-button">cделать ставку</button>
-          </div>
-        </div>
-      </section>
+<div class="overlay">
+  <h1 class="cover__title">
+    <span class="aligned-text"
+      >о<span class="no-letter-spacing">но</span></span
+    >
+    <span class="aligned-text_center"
+      >те<span class="no-letter-spacing">бе</span></span
+    >
+    <span class="aligned-text_right"
+      ><span class="no-letter-spacing">н</span>адо
+    </span>
+  </h1>
+  <div class="cover__description">
+    <h2 class="cover__description-text">
+      Аукцион вещей, в которые никто не верил
+    </h2>
+    <button type="submit" class="bet-button">cделать ставку</button>
+  </div>
+</section>
+</div>
+        
       <section class="lots">
         <h2 class="lots__heading">лоты</h2>
-        <div class="lots__card-list">
-          <article class="card_type-film">
-            <div class="overlay">
-              <div class="card">
+        <ul class="lots__card-list">
+          <li>
+            <article class="card_type-film">
+              <div class="card overlay">
                 <a href="#0" class="card-link">
                   <h3 class="card__title film_title">
                     Фильм режиссёра, который бросил киношколу
@@ -77,12 +78,11 @@
                   </p>
                 </a>
               </div>
-            </div>
-          </article>
-
-          <article class="card_type_book">
-            <div class="overlay">
-              <div class="card">
+            </article>
+          </li>
+          <li>
+            <article class="card_type_book">
+              <div class="card overlay">
                 <a href="#0" class="card-link">
                   <h3 class="card__title">
                     Книга, где описан один скучный день из жизни рекламного
@@ -98,11 +98,11 @@
                   </p>
                 </a>
               </div>
-            </div>
-          </article>
-          <article class="card_type_picture">
-            <div class="overlay">
-              <div class="card">
+            </article>
+          </li>
+          <li>
+            <article class="card_type_picture">
+              <div class="card overlay">
                 <a href="#0" class="card-link">
                   <h3 class="card__title picture-title">
                     Картина, которую повторит даже 5-летний сын маминой подруги
@@ -115,26 +115,27 @@
                   </p>
                 </a>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </li>
+        </ul>
+
         <a class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about">
-        <ul class="about__column">
-          <li class="about__logo">
+        <div class="about__column">
+          <div class="about__logo">
             <img
               src="./images/logo-white.svg"
               alt="логотип"
               class="about__logo-image"
             />
-          </li>
-          <li>
+          </div>
+          <div>
             <h3 class="about__title">Об аукционе</h3>
-          </li>
-        </ul>
+          </div>
+        </div>
         <div class="about__text">
-          <p class="about_text-one">
+          <p class="about_text">
             Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
             один аукцион. Потому что кому нужен дневник девочки-подростка или
@@ -153,29 +154,33 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="address">
+      <address class="address-footer">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <br /><a href="mailto:info@sobaka.ge">info@sobaka.ge</a> <br />
         наб. Принсенграхт 263- <br />265, Амстердам
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__menu-link_active">
+          <li>
             <a href="#0" class="footer__menu-link_active">главная</a>
           </li>
-          <li class="footer__menu-link"><a href="#0">посмотреть лоты</a></li>
-          <li class="footer__menu-link"><a href="#0">об аукционе</a></li>
+          <li><a href="#0" class="footer__menu-link">посмотреть лоты</a></li>
+          <li><a href="#0" class="footer__menu-link">об аукционе</a></li>
         </ul>
       </nav>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <img src="./images/yt.svg" alt="ссылка на you tube" />
+          <a href="#0"
+            ><img src="./images/yt.svg" alt="ссылка на you tube"
+          /></a>
         </li>
         <li class="footer__social-list-item">
-          <img src="./images/vk.svg" alt="ссылка на вк" />
+          <a href="#0"><img src="./images/vk.svg" alt="ссылка на вк" /></a>
         </li>
         <li class="footer__social-list-item">
-          <img src="./images/pinterest.svg" alt="ссылка на pinterest" />
+          <a href="#0"
+            ><img src="./images/pinterest.svg" alt="ссылка на pinterest"
+          /></a>
         </li>
       </ul>
     </footer>
