@@ -115,7 +115,7 @@
   color: white;
   margin-top: 27px;
   display: flex;
-  margin-left: 2px;
+  margin-left: 25px;
 }
 
 .card {
@@ -176,7 +176,7 @@
 }
 
 .about {
-  margin-top: 182px;
+  margin-top: 188px;
 }
 
 .about__column {
@@ -202,7 +202,7 @@
 .about__title {
   font-size: 40px;
   text-transform: uppercase;
-  margin-left: 72px;
+  margin-left: 75px;
 }
 
 .about__text {
@@ -238,7 +238,7 @@
 }
 
 .footer__social-list {
-  width: 300px;
+  width: 290px;
   list-style-type: none;
   display: flex;
 }
